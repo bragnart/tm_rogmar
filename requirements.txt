@@ -1,0 +1,2 @@
+python-telegram-bot==21.10
+yandex_cloud_ml_sdk==0.2.4
