@@ -19,6 +19,12 @@ def generate_text(prompt, context):
     text = response.alternatives[0].text
     return text
 
+def get_response(prompt):
+    request = [{"role": "system", "text":prompt}]
+    response = model.run(request)
+    text = response.alternatives[0].text
+    return text
+
 if __name__ == "__main__":
     txt = generate_text("Назови два обычных для России имени и их этимологию", " ")
     print(txt)
